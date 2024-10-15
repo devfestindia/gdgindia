@@ -24,11 +24,21 @@ export const socialMediaLinks = [
 
 export const footerLinks = [
   {
-    name: "Terms of Service",
-    url: "#",
+    name: "Community Guidelines",
+    url: "https://developers.google.com/community-guidelines",
   },
   {
     name: "Code of Conduct",
-    url: "#",
+    url: "https://devfest.gdgindia.dev/coc",
   },
 ];
+
+export const googleLinks = {
+  devfest: "https://devfest.gdgindia.dev/",
+  ccd: "https://cloudcommunitydays.dev/",
+  gdg: "https://gdg.community.dev/",
+  gde: "https://developers.google.com/community/experts",
+  gfs: "https://startup.google.com/programs/accelerator/india/",
+  wtm: "https://developers.google.com/womentechmakers",
+  certification: "https://cloud.google.com/learn/certification",
+};

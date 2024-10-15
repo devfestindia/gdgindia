@@ -1,8 +1,15 @@
 import { RiArrowRightUpLine } from "react-icons/ri";
+import { googleLinks } from "../../data/Links";
 
 const Folder2 = () => {
   return (
-    <div className="relative">
+    <div
+      className="relative"
+      role="button"
+      onClick={() => {
+        window.open(googleLinks.devfest, "_blank");
+      }}
+    >
       <div className="relative z-10 border-2 md:border-none shadow-[10px_10px_0px_0px_#000000] md:shadow-none  border-black overflow-hidden rounded-l-[28px] rounded-br-[28px]">
         <div className="relative md:absolute top-0 left-0 p-8 flex flex-col gap-16 justify-between items-end w-full h-full">
           <div className="flex flex-row items-start justify-between gap-8 w-full">
@@ -84,9 +91,9 @@ const Folder2 = () => {
                 />
               </svg>
             </div>
-          <h2 className="text-[10vw] md:text-[15vw] lg:text-6xl xl:text-6xl 2xl:text-8xl font-bold font-primary text-text text-left md:text-right w-full -mt-8 xl:-mt-4">
-            DevFest’24
-          </h2>
+            <h2 className="text-[10vw] md:text-[15vw] lg:text-6xl xl:text-6xl 2xl:text-8xl font-bold font-primary text-text text-left md:text-right w-full -mt-8 xl:-mt-4">
+              DevFest’24
+            </h2>
           </div>
         </div>
         <svg

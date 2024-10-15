@@ -1,4 +1,24 @@
 import { RiArrowRightUpLine } from "react-icons/ri";
+import { googleLinks } from "../../data/Links";
+
+const links = [
+  {
+    name: "Google Developer Groups",
+    url: googleLinks.gdg,
+  },
+  {
+    name: "Developer Experts",
+    url: googleLinks.gde,
+  },
+  {
+    name: "Google for Start ups",
+    url: googleLinks.gfs,
+  },
+  {
+    name: "Women Techmakers",
+    url: googleLinks.wtm,
+  },
+];
 
 const Folder1 = () => {
   return (
@@ -13,17 +33,14 @@ const Folder1 = () => {
               Explore Programs
             </h3>
             <ul className="flex flex-wrap gap-4 ">
-              {[
-                "Google Developer Groups",
-                "Developer Experts",
-                "Google for Start ups",
-                "Women Techmakers",
-              ].map((item, index) => (
+              {links.map((item, index) => (
                 <li
                   className="text-base  sm:text-2xl lg:text-[18px] 2xl:text-2xl border-text border-2 w-full text-center md:max-w-max rounded-full py-3 px-8 lg:p-2 lg:py-2 2xl:px-[20px] 2xl:py-4"
                   key={index}
                 >
-                  {item}
+                  <a href={item.url} target="_blank" rel="noopener noreferrer">
+                    {item.name}
+                  </a>
                 </li>
               ))}
             </ul>

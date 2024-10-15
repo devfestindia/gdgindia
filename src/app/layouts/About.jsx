@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Wrapper from "../../components/Wrapper";
+import { googleLinks } from "../../data/Links";
 
 const About = () => {
   return (
@@ -79,7 +80,7 @@ const About = () => {
                   </div>
                 </div>
                 <Link
-                  to={"#"}
+                  to={googleLinks.gdg}
                   className="bg-[#006FFF] text-base sm:text-lg p-[24px] border border-black shadow-[-8px_8px_0px_0px_#000000] rounded-full hover:shadow-none transition-all ease-in-out duration-300 text-center text-white items-center justify-center flex mt-8 2xl:mt-0"
                 >
                   Become a member today, It’s free!

@@ -2,6 +2,7 @@ import { RiArrowRightUpLine } from "react-icons/ri";
 import Wrapper from "../../components/Wrapper";
 import Folder1 from "../components/Folder1";
 import Folder2 from "../components/Folder2";
+import { googleLinks } from "../../data/Links";
 
 const Hero = () => {
   return (
@@ -46,7 +47,11 @@ const Hero = () => {
                 </div>
                 <Folder2 />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-6">
-                  <div className="MainGr2 border-2 border-black  shadow-[-10px_10px_0px_0px_#000000] p-6 md:p-4 flex flex-col h-full justify-between items-end gap-10 rounded-[28px]">
+                  <div
+                    className="MainGr2 border-2 border-black hover:shadow-[-0px_0px_0px_0px_#000000] transition-all ease-in-out duration-300  shadow-[-10px_10px_0px_0px_#000000] p-6 md:p-4 flex flex-col h-full justify-between items-end gap-10 rounded-[28px]"
+                    role="button"
+                    onClick={() => window.open(googleLinks.ccd, "_blank")}
+                  >
                     <div className="size-[50px]   bg-black text-[#E6F6E7] rounded-full text-2xl grid place-content-center shrink-0">
                       <RiArrowRightUpLine />
                     </div>
@@ -54,7 +59,13 @@ const Hero = () => {
                       Google Cloud Community Day 2024
                     </h3>
                   </div>
-                  <div className="MainGr3  border-2 border-black shadow-[10px_10px_0px_0px_#000000] p-6 md:p-4 flex flex-col h-full justify-between items-start gap-10 rounded-[28px]">
+                  <div
+                    className="MainGr3  border-2 border-black  hover:shadow-[-0px_0px_0px_0px_#000000] transition-all ease-in-out duration-300  shadow-[10px_10px_0px_0px_#000000] p-6 md:p-4 flex flex-col h-full justify-between items-start gap-10 rounded-[28px]"
+                    role="button"
+                    onClick={() => {
+                      window.open(googleLinks.certification, "_blank");
+                    }}
+                  >
                     <div className="size-[50px]   bg-black text-[#E6F6E7] rounded-full text-2xl grid place-content-center shrink-0">
                       <RiArrowRightUpLine />
                     </div>
