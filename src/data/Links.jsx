@@ -7,7 +7,7 @@ import {
 export const socialMediaLinks = [
   {
     name: "@gdgindia",
-    url: "https://x.com/GoogleDevsIN",
+    url: "https://x.com/gdgindia",
     icon: <RiTwitterXLine />,
   },
   {
@@ -17,7 +17,7 @@ export const socialMediaLinks = [
   },
   {
     name: "gdgindia",
-    url: "https://x.com/GoogleDevsIN",
+    url: "https://www.linkedin.com/company/gdgindia/",
     icon: <RiLinkedinBoxLine />,
   },
 ];
